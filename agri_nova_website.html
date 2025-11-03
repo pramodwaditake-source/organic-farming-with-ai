@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AgriNova AI Farms — Smart Organic Farming</title>
+  <meta name="description" content="AgriNova AI Farms — AI-integrated organic farming. Precision agriculture, IoT, drones, blockchain traceability and farmer empowerment." />
+  <style>
+    :root{
+      --accent:#2f855a; /* green */
+      --accent-2:#2b6cb0; /* blue */
+      --bg:#f7fafc;
+      --card:#ffffff;
+      --muted:#6b7280;
+      --max-width:1100px;
+      --radius:12px;
+      --glass: rgba(255,255,255,0.6);
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#f7fafc 0%, #ecf8f1 100%);color:#0f172a}
+    .container{max-width:var(--max-width);margin:32px auto;padding:0 20px}
+
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:54px;height:54px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:18px}
+    nav a{margin-left:18px;text-decoration:none;color:var(--muted);font-weight:600}
+
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-top:12px}
+    .hero h1{font-size:34px;margin:0 0 8px}
+    .hero p.lead{color:var(--muted);margin:0 0 18px}
+    .cta{display:flex;gap:12px}
+    .btn{padding:12px 18px;border-radius:10px;border:0;cursor:pointer;font-weight:700}
+    .btn-primary{background:var(--accent);color:white}
+    .btn-ghost{background:transparent;border:2px solid rgba(15,23,42,0.06);color:var(--muted)}
+
+    .card{background:var(--card);border-radius:var(--radius);padding:18px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+
+    .stats{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+    .stat{flex:1;min-width:120px}
+    .stat h3{margin:0;color:var(--accent)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+
+    section{margin-top:28px}
+    h2{margin:0 0 10px}
+    .muted{color:var(--muted)}
+
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .feature p{margin:8px 0 0;color:var(--muted)}
+
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+
+    footer{margin-top:40px;padding:22px 0;border-top:1px solid rgba(15,23,42,0.05);color:var(--muted);display:flex;justify-content:space-between;align-items:center}
+
+    /* responsive */
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr;}
+      .features{grid-template-columns:repeat(2,1fr)}
+      .grid{grid-template-columns:repeat(2,1fr)}
+      .two-col{grid-template-columns:1fr}
+    }
+    @media (max-width:560px){
+      header{flex-direction:column;align-items:flex-start}
+      nav a{margin-left:8px}
+      .features{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+    }
+
+    /* simple table style for financials */
+    table{width:100%;border-collapse:collapse;margin-top:8px}
+    table th, table td{padding:10px;border:1px solid rgba(15,23,42,0.06);text-align:left}
+    table th{background:linear-gradient(90deg,rgba(47,133,90,0.06),rgba(43,108,176,0.04));}
+
+    .badge{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(47,133,90,0.12);color:var(--accent);font-weight:700}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">AN</div>
+        <div>
+          <div style="font-weight:800">AgriNova AI Farms</div>
+          <div style="font-size:13px;color:var(--muted)">Smart Organic Farming</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#market">Market</a>
+        <a href="#financials">Financials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <h1>AgriNova — where AI meets Organic Farming</h1>
+          <p class="lead">Precision organic farming that increases yield, reduces waste, and builds transparent supply chains using AI, IoT, drones, and blockchain.</p>
+          <div class="cta">
+            <button class="btn btn-primary">Request a Demo</button>
+            <button class="btn btn-ghost">Download Pitch (PDF)</button>
+          </div>
+
+          <div class="stats">
+            <div class="card stat">
+              <h3>10–100+ acres</h3>
+              <div class="muted">Pilot to scale roadmap</div>
+            </div>
+            <div class="card stat">
+              <h3>AI-FaaS</h3>
+              <div class="muted">Subscription-based farm analytics</div>
+            </div>
+            <div class="card stat">
+              <h3>Traceability</h3>
+              <div class="muted">Blockchain seed-to-shelf tracking</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Quick snapshot</h3>
+          <p class="muted">AgriNova integrates sensor networks, drone imaging, machine learning models and organic practices to deliver high-quality produce with lower resource use and higher farmer incomes.</p>
+
+          <div style="margin-top:12px">
+            <strong>Vision</strong>
+            <div class="muted">Technology and nature coexisting to produce sustainable, nutrient-rich food for all.</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="card">
+          <h2>About AgriNova</h2>
+          <p class="muted">AgriNova AI Farms Pvt. Ltd. is a private company focused on scaling organic agriculture by embedding AI and smart tech into traditional farming. Our model blends ecological methods with data-driven decision making.</p>
+
+          <div class="two-col" style="margin-top:12px">
+            <div>
+              <h3>Mission</h3>
+              <p class="muted">Integrate AI and IoT technologies with natural farming for maximum yield and minimum waste. Build self-reliant farming communities through training and data tools.</p>
+            </div>
+            <div>
+              <h3>Objectives (1–5 years)</h3>
+              <ul class="muted">
+                <li>Establish 10–20 acres pilot with AI monitoring</li>
+                <li>Develop AgriNova App & secure organic certification</li>
+                <li>Scale to 100 acres; launch AI-FaaS</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services">
+        <div class="card">
+          <h2>Products & Services</h2>
+          <div class="features">
+            <div class="card feature">
+              <h3>Organic Produce</h3>
+              <p>Vegetables, fruits, millets, grains and herbal plants grown with biofertilizers & vermiculture.</p>
+            </div>
+            <div class="card feature">
+              <h3>AI Farm Management</h3>
+              <p>ML models for soil health, pest prediction, and yield optimization. App alerts for farmers.</p>
+            </div>
+            <div class="card feature">
+              <h3>IoT & Drones</h3>
+              <p>Soil sensors, automated drip irrigation and drone surveillance with thermal & multispectral imaging.</p>
+            </div>
+          </div>
+
+          <div class="features" style="margin-top:12px">
+            <div class="card feature">
+              <h3>Blockchain Traceability</h3>
+              <p>Full supply chain transparency from seed to shelf.</p>
+            </div>
+            <div class="card feature">
+              <h3>Consultancy & Training</h3>
+              <p>Farmer workshops, custom farm design and subscription analytics.</p>
+            </div>
+            <div class="card feature">
+              <h3>Technology Licensing</h3>
+              <p>License AgriNova AI to cooperatives and agritech firms.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="market">
+        <div class="card">
+          <h2>Market & Competitive Edge</h2>
+          <p class="muted">Target customers include health-conscious consumers, retailers, restaurants, and export markets. AgriNova's advantage is an integrated tech-ecosystem for certified organic farms and farmer empowerment programs.</p>
+
+          <div class="grid">
+            <div class="card">
+              <strong>Industry outlook</strong>
+              <p class="muted">Growing organic demand and increasing AI adoption create a strong runway for expansion.</p>
+            </div>
+            <div class="card">
+              <strong>Challenges</strong>
+              <p class="muted">Initial tech costs, farmer awareness, and certification processes.</p>
+            </div>
+            <div class="card">
+              <strong>Go-to-market</strong>
+              <p class="muted">Pilot clusters, partnerships with universities, digital marketing, and membership programs.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="financials">
+        <div class="card">
+          <h2>Financial Snapshot (3-year)</h2>
+          <table>
+            <thead>
+              <tr><th>Particulars</th><th>Year 1 (₹)</th><th>Year 2 (₹)</th><th>Year 3 (₹)</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Initial Investment</td><td>40,00,000</td><td>-</td><td>-</td></tr>
+              <tr><td>Revenue</td><td>18,00,000</td><td>38,00,000</td><td>65,00,000</td></tr>
+              <tr><td>Expenses</td><td>14,00,000</td><td>22,00,000</td><td>33,00,000</td></tr>
+              <tr><td>Net Profit</td><td>4,00,000</td><td>16,00,000</td><td>32,00,000</td></tr>
+            </tbody>
+          </table>
+
+          <div style="margin-top:12px">
+            <strong>Funding ask:</strong>
+            <p class="muted">₹40–45 lakhs for infrastructure, tech development, marketing, R&D and working capital. Sources: Startup India grants, NABARD, private investors, CSR partnerships.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="impact">
+        <div class="card">
+          <h2>Social & Environmental Impact</h2>
+          <p class="muted">AgriNova reduces pesticide pollution, restores soil biodiversity, creates local jobs, trains rural youth, and supports UN SDGs (Zero Hunger, Responsible Production, Climate Action).</p>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="card">
+          <h2>Contact & Next Steps</h2>
+          <p class="muted">Interested in partnering or investing? Reach out for a demo, pilot setup or a detailed pitch deck.</p>
+
+          <form onsubmit="event.preventDefault();alert('Thank you — we will contact you soon (demo).');" style="margin-top:12px;display:grid;gap:10px">
+            <input type="text" placeholder="Your name" required style="padding:10px;border-radius:8px;border:1px solid rgba(15,23,42,0.06)" />
+            <input type="email" placeholder="Email" required style="padding:10px;border-radius:8px;border:1px solid rgba(15,23,42,0.06)" />
+            <input type="text" placeholder="Phone (optional)" style="padding:10px;border-radius:8px;border:1px solid rgba(15,23,42,0.06)" />
+            <textarea placeholder="Message (pilot request, partnership, investment)" rows="3" style="padding:10px;border-radius:8px;border:1px solid rgba(15,23,42,0.06)"></textarea>
+            <div style="display:flex;gap:8px">
+              <button class="btn btn-primary" type="submit">Send Message</button>
+              <button class="btn btn-ghost" type="button" onclick="alert('Download not available in demo. Copy page or ask me to export.')">Export (PDF)</button>
+            </div>
+          </form>
+
+          <div style="margin-top:12px;color:var(--muted)">
+            <div><strong>Email:</strong> hello@agrinova.example</div>
+            <div><strong>Location:</strong> Pune, Maharashtra, India</div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div>© <span id="year"></span> AgriNova AI Farms Pvt. Ltd.</div>
+      <div class="muted">Designed for pitch & startup presentation</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
